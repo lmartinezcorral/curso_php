@@ -4,6 +4,7 @@ if (file_exists("contacts.json")){
 } else {
   $contacts = [];
 }
+
 ?>
 
 
@@ -68,7 +69,8 @@ if (file_exists("contacts.json")){
   <main>
     <div class="container pt-4 p-3">
       <div class="row"> 
-      <?php if (count($contacts) == 0): ?>
+        <?php if (count($contacts) == 0): ?>
+      
           <div class="col-md-4 mx-auto">
             <div class="card card-body text-center">
               <p>No contacts saved yet</p>
