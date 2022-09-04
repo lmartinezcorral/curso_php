@@ -1,3 +1,9 @@
+<?php
+  if ($_SERVER ["REQUEST_METHOD"] == "POST") {
+     var_dump($_POST);
+     die();
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,7 +69,7 @@
           <div class="card">
             <div class="card-header">Add New Contact</div>
             <div class="card-body">
-              <form>
+              <form method="POST" action="add.php">
                 <div class="mb-3 row">
                   <label for="name" class="col-md-4 col-form-label text-md-end">Name</label>
 
